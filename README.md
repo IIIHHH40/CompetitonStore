@@ -34,26 +34,26 @@ userIdは後付けだからidとの関連はまた考える
 ### 問題
 | HTTPメソッド |　エンドポイント(URL)　|　処理の概要 |
 | :---:| :---:|:---:|
-|GET | /api/problems/{userId} | 問題一覧を取得する |
-|POST| /api/problems/{userId} | 新しい問題を追加する |
-|GET | /api/problems/{id}/{userId} | 特定の問題の詳細を取得する |
-|PUT | /api/problems/{id}/{userId} | 問題の情報を更新する |
-|DELETE | /api/problems/{id}/{userId} | 問題を削除する |
-|GET| /api/problems?tag=DP/{userId} | タグで絞り込み検索をする |
+|GET | /api/problems | 問題一覧を取得する |
+|POST| /api/problems| 新しい問題を追加する |
+|GET | /api/problems/{id} | 特定の問題の詳細を取得する |
+|PUT | /api/problems/{id}| 問題の情報を更新する |
+|DELETE | /api/problems/{id} | 問題を削除する |
+|GET| /api/problems?tag=DP | タグで絞り込み検索をする |
 
 ### 提出コード
 | HTTPメソッド | エンドポイント(URL) | 処理の概要 |
 | :---: | :---: | :---: |
-|GET | /api/problems/{id}/{userId}/submissions | 問題に紐づく提出コード一覧を取得 |
-|POST | /api/problems/{id}/{userId}/submissions |　提出コードを追加する |
-|PUT | /api/submissions/{id}/{userId} | 提出コードを更新する |
-|DELETE | /api/submissions/{id}/{useId} | 提出コードを削除する |
+|GET | /api/problems/{id}/submissions | 問題に紐づく提出コード一覧を取得 |
+|POST | /api/problems/{id}/submissions |　提出コードを追加する |
+|PUT | /api/submissions/{id} | 提出コードを更新する |
+|DELETE | /api/submissions/{id} | 提出コードを削除する |
 
 ### タグ
 | HTTPメソッド | エンドポイント(URL) | 処理の概要 |
 | :---: | :---:| :---:|
-| GET | /api/tags/{userId} | タグ一覧を取得する |
-| POST | /api/tags/{userId} | 新しいタグを登録する |
+| GET | /api/tags | タグ一覧を取得する |
+| POST | /api/tags | 新しいタグを登録する |
 | DELETE | /api/tags/{id} |  タグを削除する |
 
 ## 5.データモデル
