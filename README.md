@@ -54,17 +54,20 @@
 ### Problemtテーブル
 | フィールド名 | 型| 必須 | 説明 |
 | :---:| :---:| :---:||:---:|
-| id | Long |
-| title|
-| difficulty|
-| url|
-| memo|
-| createdAt|
+| id | Long |必須| なし|
+| title| String | 必須|必須ではないようにするならデフォルト値が必要
+| difficulty| String |任意| Stringでいいのか考える必要がある
+| url| String |任意| urlから情報を取ってくるメソッドを将来的に定義したい|
+| memo| String |任意| |
+| createdAt| int |必須|日本標準時に設定(日付で全ての一覧をソートする必要があるとき必要)|
 
-## Submission
+
+## Submissionテーブル
 |フィールド名| 型 | 必須 | 説明 |
 | :---:| :---: | :---:| :---:|
 | id |
+
+
 
 ## 6.リクエスト・ボディ
 
